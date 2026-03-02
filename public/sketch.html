@@ -3,13 +3,58 @@
 <html lang = "en">
     <head>
         <title>Study Buddy</title>
+        <link rel = "stylesheet" href = "style.css">
     </head>
 
     <body>
         <script src = https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js></script>
-        <h1>Object Movement!</h1>
 
-        <script src = "scripts/sketchA.js"></script>
+        <h1></h1>
+
+        <div class = "main-container">
+
+            <!--characters hats switches-->
+            <div class = "hats-container">
+                <img id ="hats" class= "hats-image" src = "" alt = "Hats" />
+                <div class = "carousel-buttons">
+                    <button id = "0prevBtn">⬅</button>
+                    <button id = "0nextBtn">➞</button>
+                </div>
+            </div>
+
+            <!--characters tops switches-->
+            <div class = "tops-container">
+                <img id ="tops" class= "tops-image" src = "" alt = "Tops" />
+                <div class = "carousel-buttons">
+                    <button id = "1prevBtn">⬅</button>
+                    <button id = "1nextBtn">➞</button>
+                </div>
+            </div>
+
+            <!--characters bottoms switches-->
+            <div class = "bottoms-container">
+                <img id ="bottoms" class= "bottoms-image" src = "" alt = "Bottoms" />
+                <div class = "carousel-buttons">
+                    <button id = "2prevBtn">⬅</button>
+                    <button id = "2nextBtn">➞</button>
+                </div>
+            </div>
+
+            <!--character model switches-->
+            <div class = "character-container">
+                <img id ="players" class= "player-image" src = "" alt = "Players" />
+                <div class = "carousel-buttons">
+                    <button id = "3prevBtn">⬅</button>
+                    <button id = "3nextBtn">➞</button>
+                </div>
+            </div>
+
+            <button class = "random-button" id = "random-btn"> Randomize! </button>
+
+        </div>
+
+        <!--<script src = "scripts/sketchA.js"></script>-->
+        <script src = "scripts/switch.js"></script>
     </body>
 
 </html>
