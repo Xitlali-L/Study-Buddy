@@ -3,8 +3,10 @@
 const charCatergories = {
     hats:{
         images: [
-            "images/hat1.png",
-            "images/hat2.png"
+            "images/hair1.svg",
+            "images/hair2.svg",
+            "images/hair3.svg",
+            "images/hair4.svg"
         ],
         index: 0,
         element: document.getElementById("hats"),
@@ -14,8 +16,10 @@ const charCatergories = {
 
     tops:{
         images: [
-            "images/top1.png",
-            "images/top2.png"
+            "images/outfit1.svg",
+            "images/outfit2.svg",
+            "images/outfit3.svg",
+            "images/outfit4.svg"
         ],
         index: 0,
         element: document.getElementById("tops"),
@@ -23,20 +27,21 @@ const charCatergories = {
         prevBtn: "1prevBtn",
     },
 
-    bottoms:{
-        images: [
-            "images/pants1.png",
-            "images/pant2.png"
-        ],
-        index: 0,
-        element: document.getElementById("bottoms"),
-        nextBtn: "2nextBtn",
-        prevBtn: "2prevBtn",
-    },
+    // bottoms:{
+    //     images: [
+    //         "images/pants1.png",
+    //         "images/pant2.png"
+    //     ],
+    //     index: 0,
+    //     element: document.getElementById("bottoms"),
+    //     nextBtn: "2nextBtn",
+    //     prevBtn: "2prevBtn",
+    // },
 
     players:{
         images: [
-            "images/playerModel.png"
+            "images/base1.svg",
+            "images/base2.svg"
         ],
         index: 0,
         element: document.getElementById("players"),
@@ -52,7 +57,7 @@ function updateImg (newImg) {
     catergory.element.src = catergory.images[catergory.index];
 }
 
-//Workings of the buttons - switch back anf forth
+//Workings of the buttons - switch back and forth
 function buttonMovement() {
     for (const newImg in charCatergories){
         const catergory = charCatergories[newImg];

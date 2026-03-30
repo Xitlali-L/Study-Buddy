@@ -61,3 +61,8 @@ button:hover {
     background-color:midnightblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.complete-button {
+    background-color:rgb(197, 137, 17);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

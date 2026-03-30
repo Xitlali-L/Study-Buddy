@@ -1,0 +1,10 @@
+
+
+body {
+  background-image: url("images/background_set.svg");
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;       
+  background-color: #ffffff;    /* Fallback color */
+  min-height: 100vh; /* makes sure the body is atleast asa tall as the screen */
+}

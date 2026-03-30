@@ -9,10 +9,15 @@ const port = 3000;
 
 //http methods
 
+app.use(express.static("public"));
+
 app.get("/", (request, response) =>{
-    response.send("Hello, World!");
+    response.sendFile("sketch.html", {root: "public"});
 });
 
+app.get("/play", (req, res) =>{
+    res.sendFile("playground.html", {root: "public"});
+});
 
 //app.listen listens for our port number to start server
 app.listen(port, () => {
