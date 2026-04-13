@@ -8,50 +8,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Study Buddy</title>
         <link rel = "stylesheet" href = "style.css">
-        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">-->
-    </head>
 
     <body>
         <script src = https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js></script>
 
         <h1></h1>
 
+        <div class = "navBar">Study Buddy</div>
+
         <div class = "main-container">
+
+            <div class = "customBox"> 
+                <img id ="players" class= "player-image" src = "" alt = "Players" />
+                <img id ="tops" class= "tops-image" src = "" alt = "Tops" />
+                <img id ="hats" class= "hats-image" src = "" alt = "Hats" />
+            </div>
 
             <!--characters hats switches-->
             <div class = "hats-container">
-                <img id ="hats" class= "hats-image" src = "" alt = "Hats" />
                 <div class = "carousel-buttons">
-                    <button id = "0prevBtn">⬅</button>
-                    <button id = "0nextBtn">➞</button>
+                    <button id = "0prevBtn">⬅</button> Hair <button id = "0nextBtn">➞</button>
                 </div>
             </div>
 
             <!--characters tops switches-->
             <div class = "tops-container">
-                <img id ="tops" class= "tops-image" src = "" alt = "Tops" />
                 <div class = "carousel-buttons">
-                    <button id = "1prevBtn">⬅</button>
-                    <button id = "1nextBtn">➞</button>
+                    <button id = "1prevBtn">⬅</button> Outfit <button id = "1nextBtn">➞</button>
                 </div>
             </div>
-
-            <!--characters bottoms switches--
-            <div class = "bottoms-container">
-                <img id ="bottoms" class= "bottoms-image" src = "" alt = "Bottoms" />
-                <div class = "carousel-buttons">
-                    <button id = "2prevBtn">⬅</button>
-                    <button id = "2nextBtn">➞</button>
-                </div>
-            </div>
-            -->
             
             <!--character model switches-->
             <div class = "character-container">
-                <img id ="players" class= "player-image" src = "" alt = "Players" />
                 <div class = "carousel-buttons">
-                    <button id = "3prevBtn">⬅</button>
-                    <button id = "3nextBtn">➞</button>
+                    <button id = "3prevBtn">⬅</button> Character <button id = "3nextBtn">➞</button>
                 </div>
             </div>
 
@@ -65,7 +55,7 @@
 
         <!--<script src = "scripts/sketchA.js"></script>-->
         <script src = "scripts/switch.js"></script>
-        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>-->
     </body>
+
 
 </html>

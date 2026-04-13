@@ -27,17 +27,6 @@ const charCatergories = {
         prevBtn: "1prevBtn",
     },
 
-    // bottoms:{
-    //     images: [
-    //         "images/pants1.png",
-    //         "images/pant2.png"
-    //     ],
-    //     index: 0,
-    //     element: document.getElementById("bottoms"),
-    //     nextBtn: "2nextBtn",
-    //     prevBtn: "2prevBtn",
-    // },
-
     players:{
         images: [
             "images/base1.svg",
@@ -61,8 +50,19 @@ function updateImg (newImg) {
 function buttonMovement() {
     for (const newImg in charCatergories){
         const catergory = charCatergories[newImg];
+
+        //next
         document.getElementById(catergory.nextBtn).addEventListener("click", () => {
-            catergory.index = (catergory.index - 1 +catergory.images.length) % catergory.images.length;
+            catergory.index = (catergory.index + 1) % catergory.images.length;
+            updateImg(newImg);
+        });
+
+        //previous
+        document.getElementById(catergory.prevBtn).addEventListener('click', () =>{
+            catergory.index = catergory.index - 1;
+            if(catergory.index < 0){
+                catergory.index = catergory.images.length - 1;
+            }
             updateImg(newImg);
         });
     }
@@ -72,7 +72,7 @@ function buttonMovement() {
 function randomImg(){
     for(const newImg in charCatergories) {
         const catergory = charCatergories[newImg];
-        catergory.index = Math.floor(Math.random()*catergory.iamges.length);
+        catergory.index = Math.floor(Math.random()*catergory.images.length);
         updateImg(newImg);
     }
 }
