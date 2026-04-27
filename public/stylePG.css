@@ -7,4 +7,46 @@ body {
   background-size: cover;       
   background-color: #ffffff;    /* Fallback color */
   min-height: 100vh; /* makes sure the body is atleast asa tall as the screen */
+  overflow: hidden;
+}
+
+#timerBox{
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  background-color: deepskyblue;
+  border: 2px solid midnightblue;
+  z-index: 10;
+}
+
+#content{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 60px;
+  color:midnightblue;
+  margin-bottom: 10px;
+}
+
+#actBtn {
+  padding: 10px 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  display: block;
+}
+
+
+.character{
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 150px;
+  height: 150px;
+  z-index: 1;
 }
