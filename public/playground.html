@@ -3,16 +3,35 @@
 <html lang = "en">
     <head>
         <title>Study Buddy</title>
+        <link rel = "icon" type = "images/favicon" href = "images/favicon.ico">
         <link rel = "stylesheet" href = "stylePG.css">
     </head>
 
     <body>
         <script src = https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js></script>
 
+        <button id = "setIcon" class = "set-Icon">
+            <img src = "images/alarm_setting.svg" style = "width: 50px; height: 50px;">
+        </button>
+
+        <button id = "setChange" class = "set-Change">
+            <img src = "images/assesibility_setting.svg" style = "width: 50px; height: 50px;">
+        </button>
 
         <div id="timerBox">
-        <div id = "content">5:00</div>
+        <div id = "content">30:00</div>
         <button id = "actBtn">Start Studying</button>
+        </div>
+
+        <div id = "setMenu" class = "settingMenu hidden">
+            <h1>Set your Timer</h1>
+            <label for = "timeInput">Minutes</label>
+            <input type = "number" id = "timeInput" min = "1" max = "180" value = "30">
+
+            <div id = "menu-inside">
+                <button id = "fin">Done</button>
+                <button id = "def">Default</button>
+            </div>
         </div>
 
         <img id = "charFrame" class = "character" src = "images/sprite_0.png">

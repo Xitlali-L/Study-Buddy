@@ -6,7 +6,7 @@ body {
   background-position: center;
   background-size: cover;       
   background-color: #ffffff;    /* Fallback color */
-  min-height: 100vh; /* makes sure the body is atleast asa tall as the screen */
+  min-height: 100vh; /* makes sure the body is atleast as a tall as the screen */
   overflow: hidden;
 }
 
@@ -14,13 +14,13 @@ body {
   position: fixed;
   top: 10%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -20%);
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-
+  padding: 40px;
+  border-radius: 5%;
   background-color: deepskyblue;
   border: 2px solid midnightblue;
   z-index: 10;
@@ -37,6 +37,7 @@ body {
   padding: 10px 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 20px;
+  color:midnightblue;
   display: block;
 }
 
@@ -49,4 +50,57 @@ body {
   width: 150px;
   height: 150px;
   z-index: 1;
+}
+
+.settingMenu{
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  border: 2px solid darkolivegreen;
+  border-radius: 5%;
+  background-color: olivedrab;
+  z-index: 12;
+  padding: 30px;
+  flex-direction: column;  
+  align-items: center;
+  gap: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:antiquewhite;
+}
+
+.set-Icon{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.set-Change{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 11;
+}
+
+#timeInput{
+  width: 60px;
+  padding: 3px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#menu-inside{
+  display: flex;
+  gap: 10px;
+  padding: 30px;
+}
+
+.hidden{
+  display: none !important;
 }
